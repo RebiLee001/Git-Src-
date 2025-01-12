@@ -1,0 +1,111 @@
+/* Reset some basic elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header Styling */
+#header {
+  background-color: #4CAF50;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+#header-img {
+  width: 150px;
+  height: auto;
+}
+
+#nav-bar ul {
+  list-style-type: none;
+  display: flex;
+}
+
+#nav-bar ul li {
+  margin: 0 10px;
+}
+
+#nav-bar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#nav-bar ul li a:hover {
+  color: #ddd;
+}
+
+/* Main Content Styling */
+main {
+  margin-top: 80px;
+  /* Add margin to prevent content from being hidden behind fixed header */
+  padding: 20px;
+}
+
+section {
+  margin: 40px 0;
+}
+
+/* Form Styling */
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#email {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#submit {
+  width: 150px;
+  padding: 10px;
+  border: 1px solid #4CAF50;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: #45a049;
+}
+
+/* Media Query for mobile responsiveness */
+@media (max-width: 600px) {
+  #header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #nav-bar ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #nav-bar ul li {
+    margin-bottom: 10px;
+  }
+
+  #form {
+    width: 100%;
+  }
+
+  #email {
+    width: 100%;
+  }
+}
